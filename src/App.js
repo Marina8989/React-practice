@@ -1,10 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import {add, multiply} from './helpers';
+import cats, { meow } from './cats'
 import './App.css';
 
 function App() {
   console.log(multiply(4, 9));
+  console.log(cats);
   return (
     <div className="App">
       <header className="App-header">
