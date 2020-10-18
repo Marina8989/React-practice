@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div>
-       <img src={fakeLogo} width="150" />
+       <img src={fakeLogo} id="logo" />
        <ShoppingCart items={ items } username="Carly"/>
        <ShoppingCart items={ moreItems } username="Rusty"/>
      </div>
