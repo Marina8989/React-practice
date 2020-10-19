@@ -12,10 +12,10 @@ const ShoppingCart = ({ items, username }) => {
             <h1 className="ShoppingCart-header">{username}'s Shopping Cart</h1>
            <div>
              {items.map(i => (
-             <CartItem item={i.name} img={i.img} price={i.price} quantity={i.quantity}/>
+             <CartItem key={i.id} item={i.name} img={i.img} price={i.price} quantity={i.quantity}/>
          ))}
        </div>
-       <b>Cart Total: ${ total }</b>
+       <b style={{ color: 'magenta'}}>Cart Total: ${ total }</b>
      </div>
      )
 }

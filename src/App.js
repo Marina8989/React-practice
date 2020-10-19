@@ -4,6 +4,7 @@ import fakeLogo from './fakeLogo.svg';
 import ShoppingCart from './ShoppingCart';
 import items from './items';
 import moreItems from './moreItems';
+import Alert from './Alert'
 
 // import {add, multiply} from './helpers';
 // import cats, { meow } from './cats'
@@ -13,7 +14,13 @@ function App() {
 
   return (
     <div>
-       <img src={fakeLogo} id="logo" />
+       <Alert variant = 'success' >
+          <h1>Welcome back!</h1>
+       </Alert>
+       <Alert variant = 'danger' >
+          <h2>Stop!!</h2>
+       </Alert>
+       <img src={fakeLogo} id="logo" alt="" />
        <ShoppingCart items={ items } username="Carly"/>
        <ShoppingCart items={ moreItems } username="Rusty"/>
      </div>
